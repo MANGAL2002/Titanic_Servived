@@ -4,7 +4,7 @@ import pickle
 
 
 app = Flask(__name__)
-model = pickle.load(open('Assignment_4.pkl','rb')) 
+model = pickle.load(open('Assignment_4.sav','rb')) 
 dataset= pd.read_csv('train.csv')
 X=dataset.iloc[:,[5,6,7,9,4,2]].values
 from sklearn.preprocessing import LabelEncoder
